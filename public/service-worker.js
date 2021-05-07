@@ -1,12 +1,11 @@
 const FILES_TO_CACHE = [
     "/",
-    "/public/index.html",
-    "/public/styles.css",
-    "/public/index.js",
-    "/public/icons/icon-192x192.png",
-    "/public/icons/icon-512x512.png",
-    "/assets/images/Vue.js-icon.png",
-    "/public/manifest.webmanifest",
+    "/index.html",
+    "/styles.css",
+    "/index.js",
+    "/icons/icon-192x192.png",
+    "/icons/icon-512x512.png",
+    "/manifest.webmanifest",
 ];
 
 const STATIC_CACHE = "static-cache-v1";

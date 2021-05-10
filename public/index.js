@@ -1,6 +1,9 @@
 let transactions = [];
 let myChart;
 
+console.log(transactions);
+console.log("**************************BEFORE FETCH******************************");
+
 fetch("/api/transaction")
   .then(response => {
     return response.json();
@@ -13,12 +16,17 @@ fetch("/api/transaction")
     populateTable();
     populateChart();
   });
-
+  console.log(transactions);
+  console.log("**************************AFTER FETCH******************************");
+  
 function populateTotal() {
   // reduce transaction amounts to a single total value
   let total = transactions.reduce((total, t) => {
     return total + parseInt(t.value);
   }, 0);
+
+  console.log(transactions);
+  console.log("**************************AFTER REDUCE******************************");
 
   let totalEl = document.querySelector("#total");
   totalEl.textContent = total;

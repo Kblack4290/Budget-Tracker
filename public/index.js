@@ -1,5 +1,6 @@
 let transactions = [];
 let myChart;
+const fetch = require("node-fetch");
 
 console.log(transactions);
 console.log("**************************BEFORE FETCH******************************");
